@@ -7,14 +7,28 @@ body {
   background-color: hsl(204, 43%, 93%);
 }
 .container {
-  width: 80%;
+  width: 50%;
   height: 100vh;
-  margin: 0 auto 0 auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10%;
 }
 main {
   background-color: white;
   margin: 0em;
-  padding-bottom: 1em;
+  padding: 1em;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+main h2 {
+  color: hsl(179, 62%, 43%);
+}
+main h4 {
+  color: hsl(71, 73%, 54%);
+}
+main p {
+  color: hsl(218, 22%, 67%);
+  font-size: 1.2em;
 }
 .flexbox {
   display: flex;
@@ -22,12 +36,41 @@ main {
 }
 .flex {
   flex: 1;
+
+  letter-spacing: 2px;
+}
+.flex h2 {
+  color: white;
+}
+.flex p {
+  color: white;
 }
 .left {
   background-color: darkgreen;
+  border-bottom-left-radius: 10px;
+  padding: 1em;
+}
+.left span {
+  font-size: 3em;
+}
+.left button {
+  width: 100%;
+  padding: 10px;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  background-color: hsl(71, 73%, 54%);
 }
 .right {
   background-color: darkolivegreen;
+  border-bottom-right-radius: 10px;
+}
+.right ul {
+  margin-top: 2em;
+}
+.right li {
+  list-style: none;
+  color: white;
 }
 .attribution {
   font-size: 11px;
@@ -35,5 +78,35 @@ main {
 }
 
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: hsl(345, 92%, 49%);
+  font-size: 1.5em;
+  text-decoration: none;
+}
+@media screen and (max-width: 800px) {
+  .container {
+    width: 100%;
+    margin: 0px;
+  }
+  main h2 {
+    font-size: 1.8em;
+  }
+  main h4 {
+    font-size: 1.8em;
+  }
+  main p {
+    font-size: 20px;
+  }
+  .flexbox {
+    display: block;
+  }
+  .flex {
+    padding: 1em;
+    border-radius: 0px;
+  }
+  .left p {
+    font-size: 20px;
+  }
+  .right li {
+    font-size: 20px;
+  }
 }
