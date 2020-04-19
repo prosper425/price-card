@@ -1,0 +1,39 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0em;
+  background-color: hsl(204, 43%, 93%);
+}
+.container {
+  width: 80%;
+  height: 100vh;
+  margin: 0 auto 0 auto;
+}
+main {
+  background-color: white;
+  margin: 0em;
+  padding-bottom: 1em;
+}
+.flexbox {
+  display: flex;
+  margin: 0em;
+}
+.flex {
+  flex: 1;
+}
+.left {
+  background-color: darkgreen;
+}
+.right {
+  background-color: darkolivegreen;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
